@@ -18,13 +18,15 @@ var crystal = {
   }
 };
 
+var currentScore = 0;
+var targetScore = 0;
 var totalWins = 0;
 var totalLosses = 0;
 
 // functions
 // random number function:
 var getRandomnumber = function(min, max) {
-  return math.floor(math.random() * (max - min + 1) + min);
+  return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
 // start & reset of game function
@@ -60,7 +62,7 @@ var checkWin = function() {
     totalLosses++;
     $("#LossTally").html(totalLosses);
     startGame();
-  } else if (currentScore < targetScore) {
+  } else if ((currentScore = targetScore)) {
     alert("CONGRATULATIONS !  YOU WIN");
     totalWins++;
     $("#WinTally").html(totalWins);
