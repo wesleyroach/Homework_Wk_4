@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+<meta charset- "UTF-8">
+<title>Crystal Collector</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron" style="background-color:#b22222; color: white;">
+        <div class="container">
+            <h1 class="text-center">Crystal Collector</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-primary">
+                <div class="panel heading">
+                    <h3 class="panel-title text-center"style="background-color: red; color: white;">Instructions</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        You will be assigned a random number to start the game. There are 4 crystals you can see below. By clicking on a crystal you will add an amount of points to your total score. You win the game by matching your total score to the random number. You lose if your total score goes above that random number. The value of each crystal is hidden from view until you click on it. When the game starts the values will be changed for each crystal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+                <div class="panel panel-primary">
+                        <div class="panel heading">
+                            <h3 class="panel-title text-center"style="background-color: red; color: white;">Target Score</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center" id="targetScore"></h3>
+                        </div>
+                </div>
+        </div>
+            <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                            <div class="panel heading">
+                                <h3 class="panel-title text-center"style="background-color: red; color: white;">Your Score</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h3 class="text-center" id="yourScore"></h3>
+                            </div>
+                    </div>
+            </div>
+    <div class="col-lg-6">
+            <div class="panel panel-primary">
+            <div class="panel heading">
+                <h3 class="panel-title text-center"style="background-color: red; color: white;">Crystal Selection</h3>
+            </div>
+            <div class="panel-body text-center">
+                <img src="assets/images/Sapphire.jpeg" alt ="Sapphire" id="blue"/>
+                <img src="assets/images/Ruby.jpeg" alt="Ruby" id="red"/>
+                <img src="assets/images/Emerald.jpeg" alt="Emerald" id="green"/>
+                <img src="assets/images/Diamond.jpeg" alt="Diamond" id="silver"/>
+            </div>
+            </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+            <div class="panel panel-primary">
+                    <div class="panel heading">
+                        <h3 class="panel-title text-center"style="background-color: red; color: white;">Win Tally</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="WinTally">0</h3>
+                    </div>
+            </div>
+    </div>
+    <div class="col-lg-6">
+            <div class="panel panel-primary">
+                    <div class="panel heading">
+                        <h3 class="panel-title text-center"style="background-color: red; color: white;">Loss Tally</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="LossTally">0</h3>
+                    </div>
+            </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
